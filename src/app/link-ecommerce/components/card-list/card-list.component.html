@@ -1,0 +1,15 @@
+<div class="row">
+  <div  *ngFor="let lis of ListCountry"  class="col-md-3 col-sm-6">
+    <div class="card mb-2 text-center bg-dark">
+
+      <img [src]="lis.flags.svg " [alt]="lis.name.common" class="card-img-top">
+
+      <div class="card-body text-white">
+        <p class="card-text">
+          {{lis.name.common}}
+        </p>
+        <a [routerLink]="['/countries/by',lis.cca3]">Informacion</a>
+      </div>
+    </div>
+  </div>
+</div>

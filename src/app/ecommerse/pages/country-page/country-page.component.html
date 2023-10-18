@@ -1,0 +1,17 @@
+<h2>POR PAIS</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+      <!-- SEARCHBOX -->
+      <app-searchbox  (onvalue)="searchByCountry($event)"
+                      placeholder="Buscar Por Pais"></app-searchbox>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr>
+    <!-- Lista de cards -->
+    <app-card-list [ListCountry]="ListCountry"></app-card-list>
+  </div>
+</div>
